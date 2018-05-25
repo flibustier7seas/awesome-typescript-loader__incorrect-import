@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "target": "es2016",
+        "types": [
+             "node"
+        ],
+        // module resolution
+        "baseUrl": "./src/",
+        "moduleResolution": "node",
+        "traceResolution": true,
+        "forceConsistentCasingInFileNames": false,
+
+        // module processing
+        "module": "commonjs", // errors
+        // "module": "es6", // work fine
+
+        // validation rules
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+    }
+}
