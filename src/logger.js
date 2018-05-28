@@ -1,6 +1,6 @@
 // CommonJS
 
-var logger = {
+const logger = {
     log: function(value) {
         console.log(value);
     },
