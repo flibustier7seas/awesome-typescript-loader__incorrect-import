@@ -19,7 +19,12 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loaders: ["awesome-typescript-loader"],
+        loaders: [
+          {
+            loader: path.resolve(__dirname, "logger-loader.js")
+          },
+          "awesome-typescript-loader"
+        ],
         exclude: path.resolve(__dirname, "node_modules"),
         include: path.resolve(__dirname, "src")
       },
@@ -43,8 +48,11 @@ module.exports = {
     ]
   },
 
-  plugins: [new CleanWebpackPlugin(["dist"]), new HtmlWebpackPlugin(),
-  new webpack.WatchIgnorePlugin([
-      /css\.d\.ts$/, // ignore *.d.ts files
-  ]),]
+  plugins: [
+    new CleanWebpackPlugin(["dist"]),
+    new HtmlWebpackPlugin(),
+    new webpack.WatchIgnorePlugin([
+      /css\.d\.ts$/ // ignore *.d.ts files
+    ])
+  ]
 };
