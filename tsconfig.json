@@ -13,6 +13,9 @@
         "traceResolution": true,
         "forceConsistentCasingInFileNames": false,
 
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+
         // module processing
         "module": "commonjs", // errors
         // "module": "es6", // work fine

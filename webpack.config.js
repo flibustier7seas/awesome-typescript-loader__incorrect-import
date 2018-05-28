@@ -18,7 +18,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.[j|t]sx?$/,
         loaders: [
           {
             loader: path.resolve(__dirname, "logger-loader.js")
