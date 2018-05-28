@@ -1,0 +1,1 @@
+Issue: https://github.com/s-panferov/awesome-typescript-loader/issues/583
